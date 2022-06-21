@@ -5,11 +5,12 @@
 }
 
 body {
-    background: #ecf0f1;
+    background: #9e979d71;
 }
 
 p {
     color: #524c56;
+    ;
     font-size: 100%;
     line-height: 155%;
     padding: 3%;
@@ -30,14 +31,14 @@ h3 {
 a {
     color: #524c56;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 
 /* sirve para cuando se selccione se vea de otro tono */
 
 a:hover {
-    color: #c3d7df;
+    color: #da1d1d;
 }
 
 img {
@@ -76,12 +77,20 @@ header #logo img {
     width: 100px;
 }
 
+.header-inner {
+    background-image: url(/images/img/baner_programacion.jpg);
+}
+
 
 /* estilos del nav */
 
 nav {
     float: right;
     padding: 25px 20px 0 0;
+}
+
+.color-letras--nav {
+    color: black;
 }
 
 #menu-icon {
@@ -102,11 +111,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #6991ac;
+    color: #f1f2f3;
 }
 
 .active {
-    color: #3f5767 !important;
+    color: #f1f1f1 !important;
 }
 
 .one-third {
@@ -194,7 +203,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: #f5f5f5;
+    color: #a01111;
 }
 
 .social {
@@ -225,6 +234,95 @@ footer {
     font: 100%;
     line-height: 155%;
 }
+
+
+/* formulario */
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #ab4493;
+}
+
+.h3--fomr {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+}
+
+.aviso {
+    font-size: 18px;
+    color: #fcfcfc;
+}
+
+button {
+    height: 45px;
+    width: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: #ab4493;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 50px 0 0 200px;
+}
+
+button p {
+    color: #fff;
+}
+
+span {
+    color: #ab4493;
+}
+
+label {
+    float: center;
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+input {
+    background-color: #fbfbfb;
+    /* width: 300px; */
+    height: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.p--form {
+    font-size: 14px;
+    color: #ffffff;
+    background-image: url(/images/img/imagen_form.jpg);
+}
+
+.margin--form {
+    margin: 0 0 0 50px;
+}
+
+
+/* media querys para movil */
 
 @media screen and (max-width: 768px) {
     p {
@@ -297,7 +395,7 @@ footer {
         font-size: 80%;
     }
     .video h2 {
-        /* text-align: justify;
-        width: 100%; */
+        text-align: justify;
+        width: 100%;
     }
 }
