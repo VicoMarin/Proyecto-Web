@@ -79,6 +79,9 @@ header #logo img {
 
 .header-inner {
     background-image: url(/images/img/baner_programacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
