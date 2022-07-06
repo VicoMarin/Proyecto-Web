@@ -117,12 +117,8 @@ nav ul li a {
     color: #f1f2f3;
 }
 
-.active {
-    color: #f1f1f1 !important;
-}
-
 .one-third {
-    width: 31.5%;
+    width: 30.5%;
     float: left;
     padding: 10px;
     text-align: center;
@@ -193,6 +189,37 @@ footer {
     float: left;
     width: 60%;
     padding: 4% 4% 2% 0;
+}
+
+.shake {
+    font-size: 1rem;
+    margin: auto;
+}
+
+.shake:hover {
+    animation: mover 0.5s;
+    animation-iteration-count: unset;
+}
+
+@keyframes mover {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
 }
 
 .footer-nav {
@@ -318,10 +345,52 @@ input {
     font-size: 14px;
     color: #ffffff;
     background-image: url(/images/img/imagen_form.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .margin--form {
     margin: 0 0 0 50px;
+}
+
+.body--habilidades {
+    background: #eee;
+}
+
+.header h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.titulo h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #0e0e0e;
+    text-transform: uppercase;
+    background-color: #a1b2bd;
+}
+
+.titulo h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #0e0e0e;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.container div:hover {
+    border-radius: 10px;
+    border: 1px solid #f1c40f;
 }
 
 
@@ -359,11 +428,18 @@ input {
         width: 30%;
         opacity: .95;
     }
+    nav ul li a {
+        color: #0e0e0e;
+    }
     nav li {
         text-align: center;
         width: 100%;
     }
     .one-third {
+        float: left;
+        width: 100%;
+    }
+    .container {
         float: left;
         width: 100%;
     }
@@ -400,5 +476,27 @@ input {
     .video h2 {
         text-align: justify;
         width: 100%;
+    }
+    .p--form {
+        font-size: 14px;
+        color: #ffffff;
+        background-image: url(/images/img/imagen_form.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #enviar {
+        font-size: x-small;
+    }
+    #mensaje {
+        background-color: #fbfbfb;
+        width: 300px;
+        height: 100px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ab4493;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-top: 15px;
     }
 }
