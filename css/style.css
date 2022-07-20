@@ -379,19 +379,21 @@ input {
     text-transform: uppercase;
 }
 
-.container {
+
+/* .container {
     width: 100%;
     max-width: 100%;
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
-}
+} */
 
-.container div:hover {
+
+/* .container div:hover {
     border-radius: 10px;
     border: 1px solid #f1c40f;
-}
+} */
 
 .contenedor--port {
     width: 100%;
