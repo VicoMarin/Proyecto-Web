@@ -298,13 +298,23 @@ button {
     margin-bottom: 20px;
     margin-top: 30px;
     text-transform: uppercase;
-    background-color: #ab4493;
-    border-color: #ab4493;
     border-style: solid;
     border-radius: 10px;
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     margin: 50px 0 0 200px;
+}
+
+.button--aceptar {
+    @extend button;
+    background-color: #ab4493;
+    border-color: #ab4493;
+}
+
+.button--canceld {
+    @extend button;
+    background-color: #a01111;
+    border-color: #a01111;
 }
 
 button p {
@@ -381,22 +391,6 @@ input {
     color: #0e0e0e;
     text-transform: uppercase;
 }
-
-
-/* .container {
-    width: 100%;
-    max-width: 100%;
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-} */
-
-
-/* .container div:hover {
-    border-radius: 10px;
-    border: 1px solid #f1c40f;
-} */
 
 .contenedor--port {
     width: 100%;
@@ -599,4 +593,12 @@ input {
 
 .enlace:hover {
     color: orangered;
+}
+
+$redes:(mail:#5ECA25, twitter: #55acee, youtube:red, face: #3a5795, insta: #DE80D8);
+@each $red,
+$color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
 }
