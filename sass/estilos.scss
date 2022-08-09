@@ -1,3 +1,7 @@
+@import 'secciones/habilidades';
+@import 'secciones/portafolio';
+@import 'secciones/contacto';
+@import 'secciones/servicios';
 // variables
 $backgroud_color_body:rgb(238, 174, 202);
 // Se agrega codigo SASS
@@ -56,11 +60,6 @@ img {
 
 
 /* lo usamos como id unico */
-
-#wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 #banner-wrapper {
     max-width: 1200px;
@@ -305,17 +304,7 @@ button {
     margin: 50px 0 0 200px;
 }
 
-.button--aceptar {
-    @extend button;
-    background-color: #ab4493;
-    border-color: #ab4493;
-}
 
-.button--canceld {
-    @extend button;
-    background-color: #a01111;
-    border-color: #a01111;
-}
 
 button p {
     color: #fff;
@@ -355,95 +344,11 @@ input {
     margin-bottom: 20px;
 }
 
-.p--form {
-    font-size: 14px;
-    color: #ffffff;
-    background-image: url(/images/img/imagen_form.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
 
-.margin--form {
-    margin: 0 0 0 50px;
-}
-
-// .body--habilidades {
-//     background: #eee;
-// }
 .header h1 {
     color: black;
     font-size: 50px;
 }
-
-.titulo h2 {
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1rem;
-    color: #0e0e0e;
-    text-transform: uppercase;
-    background-color: #a1b2bd;
-}
-
-.titulo h1 {
-    padding: 20px 0;
-    text-align: center;
-    font-size: 2rem;
-    color: #0e0e0e;
-    text-transform: uppercase;
-}
-
-.contenedor--port {
-    width: 100%;
-    background: rgba(9, 9, 9, 0.818);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contenedor--port img {
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-    bottom: 2px solid rgba(9, 9, 9, 0.818);
-    box-shadow: 0 0 0 2px white;
-    flex: auto;
-}
-
-.contenedor--port:hover img {
-    filter: blur(1px);
-    transform: scale(.100);
-    transition: 10s;
-}
-
-
-/* servicios con grid */
-
-.grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #345361;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    border: solid 1px rgb(255, 255, 255);
-    background-repeat: no-repeat;
-}
-
-.grid-item:hover {
-    filter: opacity(0.8);
-    transform: scale(1.04);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 15px;
-    padding: 20px;
-    grid-auto-flow: dense;
-}
-
-
 /* media querys para movil */
 
 @media screen and (max-width: 768px) {
